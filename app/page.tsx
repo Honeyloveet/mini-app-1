@@ -3,6 +3,8 @@
 import WebApp from "@twa-dev/sdk";
 import { useEffect, useState } from "react";
 
+export const runtime = "edge";
+
 // Define the interface for user data
 interface UserData {
   id: number;
