@@ -25,10 +25,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="p-4">
+    <main className="p-4 text-lg text-red-600 font-bold">
       {userData ? (
         <>
-          <h1 className="text-2xl font-bold mb-4">User Data</h1>
+          <h1 className="text-2xl font-bold mb-4 text-red-600">User Data</h1>
           <ul>
             <li>ID: {userData.id}</li>
             <li>First Name: {userData.first_name}</li>
@@ -39,7 +39,7 @@ export default function Home() {
           </ul>
         </>
       ) : (
-        <div>Loading...</div>
+        <div className="text-2xl text-red-600 font-bold">Loading...</div>
       )}
     </main>
   );
